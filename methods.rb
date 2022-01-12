@@ -1,7 +1,7 @@
 def transportxpense(transportation)
   ttotal = 0
   transportation.each do |kms|
-    ttotal += kms.to_i
+    ttotal += kms
   end
   if ttotal <= 100
     ttotal = ttotal * 0.12
@@ -14,9 +14,9 @@ end
 def mealsxpense(meals)
   mtotal = 0
   if meals.size <= 3
-    mtotal = meals.size.to_i * 10
+    mtotal = meals.size * 10
   else
-    mtotal = ((meals.size.to_i - 3) * 6) + 30
+    mtotal = ((meals.size - 3) * 6) + 30
   end
   mtotal
 end
@@ -24,7 +24,7 @@ end
 def parkingxpense(parking)
   ptotal = 0
   parking.each do |eurs|
-    ptotal += eurs.to_i
+    ptotal += eurs
   end
   if ptotal <= 20
     ptotal
@@ -37,7 +37,7 @@ end
 def otherxpense(others)
   ototal = 0
   others.each do |other|
-    ototal += other.to_i
+    ototal += other
   end
   ototal
 end
