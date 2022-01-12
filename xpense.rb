@@ -61,7 +61,7 @@ puts "______________________________________________________"
 puts ' '
 if ototal != 0
   puts "The following costs are not to be refunded:"
-  print "Other costs: € "
+  print "Other expenses: € "
   puts ototal
   puts "______________________________________________________"
   puts ' '
