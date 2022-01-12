@@ -14,7 +14,7 @@ parking = []
 others = []
 
 CSV.foreach(path, headers: true, converters: :numeric) do |row|
-  raise TypeError, "Something's wrong with your Expenses Report: #{row} Expected an Integer, got #{row[1].class.name}" unless row[1].is_a?(Integer)
+  raise TypeError, "Something's wrong with your Expenses Report: #{row} Expected an Integer, got #{row[1].class.name}." unless row[1].is_a?(Integer)
 
   if row[0] == 'transportation'
     transportation << row[1]
